@@ -9,7 +9,10 @@ const para2 = document.querySelector('#answer');
 function onClick(event) {
   event.preventDefault();
   let f1 = document.getElementsByName("field1");
-  para2.textContent = f1[0].value * parseInt(para.textContent) +" рублей.";
+  if(f1[0].value<=100 && f1[0].value>=1)
+    para2.textContent = f1[0].value * parseInt(para.textContent) +" рублей.";
+  else
+    para2.textContent = "Ошибка\n"+ f1[0].value + "∉[1;100]";
 }
 
 const select = document.querySelector('#product');
