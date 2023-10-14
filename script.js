@@ -1,9 +1,24 @@
+window.addEventListener('DOMContentLoaded', function (event) {
+  console.log("DOM fully loaded and parsed");
+  let b = document.getElementById("button");
+  b.addEventListener("click", onClick);
+});
+
+const para2 = document.querySelector('#answer');
+
+function onClick(event) {
+  event.preventDefault();
+  let f1 = document.getElementsByName("field1");
+  para2.textContent = f1[0].value * parseInt(para.textContent) +" рублей.";
+}
+
 const select = document.querySelector('#product');
 const para = document.querySelector('#value');
 
 select.addEventListener('change', setProduct);
 
-function setProduct() {
+function setProduct(event) {
+  event.preventDefault();
   const choice = select.value;
 
   if (choice === 'Конфета') {
@@ -19,8 +34,5 @@ function setProduct() {
   }
 }
 
-const para2 = document.querySelector('#answer');
-function click1() {
-  let f1 = document.getElementsByName("field1");
-  para2.textContent = f1[0].value * parseInt(para.textContent) +" рублей.";
-}
+
+
