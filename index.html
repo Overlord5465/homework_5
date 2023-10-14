@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>homework_5</title>
+</head>
+  <body>
+      <form id="meForm">
+        <span>Товар:</span>
+        <select id="product" name="select" required>
+          <option value="Конфета">Конфета</option>
+          <option value="Булочка">Булочка</option>
+          <option value="Батончик">Батончик</option>
+          <option value="Плитка шоколада">Плитка шоколада</option>
+          <option value="Торт">Торт</option>
+        </select>
+        <p>Цена за 1 шт.: <span id="value">5 рублей</span>.</p>
+        <br>
+        <span>Кол-во(min 1, max 100):</span>
+        <input name="field1" type="number" min="1" max="100" value="5" required>
+        <button id="button1" onclick="click1();" type="button">Посчитать</button>
+        <p id="result">Итого: <span id="answer"></span></p>
+        
+      </form>
+
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
