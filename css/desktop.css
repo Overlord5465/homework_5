@@ -15,7 +15,7 @@
   }
 
   header{
-    background-image: url(/images/UFO.png);
+    background-image: url(../images/UFO.png);
     background-repeat: no-repeat;
     background-size: 100%;
     height: 120px;
@@ -23,7 +23,7 @@
 
   footer{
     bottom: 0;
-    background-image: url(/images/moon.jpg);
+    background-image: url(../images/moon.jpg);
     background-size: 100%;
   }
 
@@ -93,13 +93,13 @@
     position: fixed;
     width: 100%;
     height: 100%;
-    background-image: url(/images/earth.jpg);
+    background-image: url(../images/earth.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
   }
 
   #TV{
-    background-image: url(/images/TV.png);
+    background-image: url(../images/TV.png);
     height:678px;
     z-index: 10;
   }

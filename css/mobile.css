@@ -1,7 +1,7 @@
 @media (max-width: 599px) { 
   body{
     background-color: black;
-    background-image: url(/images/earth.jpg);
+    background-image: url(../images/earth.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     margin: 0;
@@ -16,7 +16,7 @@
   }
 
   header{
-    background-image: url(/images/UFO.png);
+    background-image: url(../images/UFO.png);
     background-size: 100%;
     background-repeat: no-repeat;
     display: flex;
@@ -26,7 +26,7 @@
 
   footer{
     bottom: 0;
-    background-image: url(/images/moon.jpg);
+    background-image: url(../images/moon.jpg);
   }
 
   header h2{
@@ -109,7 +109,7 @@
     position: fixed;
     width: 100%;
     height: 100%;
-    background-image: url(/images/earth.jpg);
+    background-image: url(../images/earth.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
   }
